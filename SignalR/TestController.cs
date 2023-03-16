@@ -17,7 +17,7 @@ public class TestController : ControllerBase
     [HttpPost()]
     public async Task<IActionResult> Post()
     {
-        await this.hub.Clients.All.TestSignal("test1");
+        await this.hub.Clients.All.TestSignal("Test String");
         return Ok();
     }
 }
